@@ -77,11 +77,9 @@
 		CEBFD71E1B3A9D8A00E4442B /* Calculator Swift */ = {
 			isa = PBXGroup;
 			children = (
-				CEBFD7211B3A9D8A00E4442B /* AppDelegate.swift */,
 				CEBFD7231B3A9D8A00E4442B /* ViewController.swift */,
 				CEBFD7251B3A9D8A00E4442B /* Main.storyboard */,
 				CEBFD7281B3A9D8A00E4442B /* Images.xcassets */,
-				CEBFD72A1B3A9D8A00E4442B /* LaunchScreen.xib */,
 				CEBFD71F1B3A9D8A00E4442B /* Supporting Files */,
 			);
 			path = "Calculator Swift";
@@ -90,6 +88,8 @@
 		CEBFD71F1B3A9D8A00E4442B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEBFD72A1B3A9D8A00E4442B /* LaunchScreen.xib */,
+				CEBFD7211B3A9D8A00E4442B /* AppDelegate.swift */,
 				CEBFD7201B3A9D8A00E4442B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -407,6 +407,7 @@
 				CEBFD73D1B3A9D8A00E4442B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEBFD73E1B3A9D8A00E4442B /* Build configuration list for PBXNativeTarget "Calculator SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +416,7 @@
 				CEBFD7401B3A9D8A00E4442B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
