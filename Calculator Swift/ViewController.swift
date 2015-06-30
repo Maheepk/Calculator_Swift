@@ -41,9 +41,40 @@ class ViewController: UIViewController {
     }
     
     @IBAction func operate(sender: UIButton) {
+        let operation = sender.currentTitle!
+        
+        if userIsInMiddleOfTypingNumber {
+            enter()
+        }
+        
+        switch operation {
+            
+            case  "×": performOperations {$0 * $1}
+            case  "÷": performOperations {$1 / $0}
+            case  "+": performOperations {$0 + $1}
+            case  "−": performOperations {$1 - $0}
+            case  "√": performOperations {sqrt($0)}
+            
+            default: break
+        }
         
     }
     
+    func performOperations(operation: (Double, Double) -> Double) {
+        
+        if operandStack.count >= 2 {
+            displayValue = operation(operandStack.removeLast(), operandStack.removeLast())
+            enter()
+        }
+    }
+    
+    func performOperations(operation: Double -> Double) {
+        
+        if operandStack.count >= 1 {
+            displayValue = operation(operandStack.removeLast())
+            enter()
+        }
+    }
     
     var displayValue: Double {
         
